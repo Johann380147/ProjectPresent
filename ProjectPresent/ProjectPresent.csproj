@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{D33132A9-98B4-4C6E-9047-7A09E91572D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ProjectPresent</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>ProjectPresent</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="RadialProgress.Android">
+      <HintPath>..\..\..\..\Downloads\Awesome Tools\radialprogress-1.0.1.3\lib\android\RadialProgress.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design">
+      <HintPath>..\packages\Xamarin.Android.Support.Design.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatabaseHandler.cs" />
+    <Compile Include="RetainFragment.cs" />
+    <Compile Include="SQLite.cs" />
+    <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="ListViewAdapters.cs" />
+    <Compile Include="Students.cs" />
+    <Compile Include="AttendanceRateActivity.cs" />
+    <Compile Include="xColumnArrayAdapter.cs" />
+    <Compile Include="VerticalScrollView.cs" />
+    <Compile Include="HelperClass.cs" />
+    <Compile Include="ViewPagerAdapter.cs" />
+    <Compile Include="MiscFragment.cs" />
+    <Compile Include="AdminTabActivity.cs" />
+    <Compile Include="ChangeModuleFragment.cs" />
+    <Compile Include="PastRecordsFragment.cs" />
+    <Compile Include="mApplication.cs" />
+    <Compile Include="DateTimeActivity.cs" />
+    <Compile Include="CancelDateTimeActivity.cs" />
+    <Compile Include="cDialogFragment.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\layout\MultiColumnList.xml" />
+    <AndroidResource Include="Resources\drawable\notification.png" />
+    <AndroidResource Include="Resources\layout\AdminLayout.axml" />
+    <AndroidResource Include="Resources\layout\ChangeModuleLayout.axml" />
+    <AndroidResource Include="Resources\layout\PastRecordsLayout.axml" />
+    <AndroidResource Include="Resources\layout\AttendanceRateLayout.axml" />
+    <AndroidResource Include="Resources\layout\SimpleListItem1.xml" />
+    <AndroidResource Include="Resources\color\list_highlight.xml" />
+    <AndroidResource Include="Resources\drawable\options.png" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\menu\attendance_rate_menu.xml" />
+    <AndroidResource Include="Resources\menu\main_menu.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\history_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\history_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\history_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\history_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\history_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\date_range_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\date_range_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\date_range_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\date_range_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\date_range_24dp.png" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values-v21\styles.xml" />
+    <AndroidResource Include="Resources\anim\slide_down.xml" />
+    <AndroidResource Include="Resources\anim\slide_up.xml" />
+    <AndroidResource Include="Resources\drawable\triangle_right.png" />
+    <AndroidResource Include="Resources\layout\MiscLayout.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_build_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_class_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\records.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_build_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_class_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\records.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_build_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_class_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\records.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_build_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_class_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\records.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_build_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_class_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\records.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_delete_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_lock_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_lock_open_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\pie.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_delete_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_lock_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_lock_open_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\pie.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_delete_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_lock_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_lock_open_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\pie.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_delete_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_lock_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_lock_open_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\pie.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_delete_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_lock_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_lock_open_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\pie.png" />
+    <AndroidResource Include="Resources\drawable\triangle_down.png" />
+    <AndroidResource Include="Resources\color\selector.xml" />
+    <AndroidResource Include="Resources\layout\ImageList.axml" />
+    <AndroidResource Include="Resources\drawable\text_selector.xml" />
+    <AndroidResource Include="Resources\drawable\selected_state.xml" />
+    <AndroidResource Include="Resources\color\colors.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_timer_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_timer_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_timer_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_timer_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_timer_black_36dp.png" />
+    <AndroidResource Include="Resources\layout\SchedulerLayout.axml" />
+    <AndroidResource Include="Resources\layout\DateTimeLayout.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_access_time_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_event_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_access_time_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_event_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_access_time_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_event_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_access_time_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_event_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_access_time_black_36dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_event_black_36dp.png" />
+    <AndroidResource Include="Resources\layout\CancelDateTimeLayout.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_search_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\values-v21\" />
+    <Folder Include="Resources\anim\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportdesign">
+      <Version>23.0.1.3</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_search_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_search_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_search_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_search_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\searchable.xml" />
+  </ItemGroup>
+</Project>

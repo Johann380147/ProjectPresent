@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">ProjectPresent</string>
+	<string name="main_label">Attendance List</string>
+
+	 <string-array name="entry_access">
+        <item>Block Entries</item>
+        <item>Unblock Entries</item>
+    </string-array>
+</resources>

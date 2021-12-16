@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<menu
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ xmlns:tools="http://schemas.android.com/tools"
+ tools:context=".MainActivity">
+ 	<item 
+	    android:id="@+id/action_main_search"
+	    android:title="Search"
+	    android:icon="@drawable/ic_search_black_48dp"
+	    app:showAsAction="ifRoom|collapseActionView"
+	    app:actionViewClass="android.support.v7.widget.SearchView" />
+	<item
+		android:id="@+id/action_return_today"
+		android:icon="@drawable/date_range_24dp"
+		android:title="Today"
+		app:showAsAction="ifRoom"/>
+
+</menu>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/misc_coordinator_layout">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Space
+                android:id="@+id/spaceMisc"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <TextView
+                android:text="Utility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#26A69A"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+            <TextView
+                android:text="Check Attendance Rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:background="@drawable/text_selector"
+                android:id="@+id/btnAttendanceRate"
+                android:drawableLeft="@drawable/pie"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:minHeight="60dp"
+                android:gravity="left|center_vertical" />
+            <TextView
+                android:text="Schedule Tasks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:background="@drawable/text_selector"
+                android:id="@+id/btnSchedule"
+                android:drawableLeft="@drawable/ic_timer_black_36dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:minHeight="60dp"
+                android:gravity="left|center_vertical" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#D3D3D3" />
+            <TextView
+                android:text="Actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#26A69A"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+            <TextView
+                android:text="Block Entries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:background="@drawable/text_selector"
+                android:id="@+id/btnBlock"
+                android:drawableLeft="@drawable/ic_lock_black_36dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:minHeight="60dp"
+                android:gravity="left|center_vertical" />
+            <TextView
+                android:text="Delete All Records"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:background="@drawable/text_selector"
+                android:id="@+id/btnClearAll"
+                android:drawableLeft="@drawable/ic_delete_black_36dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:minHeight="60dp"
+                android:gravity="left|center_vertical" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

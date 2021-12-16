@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_coordinator_layout"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <TextView
+            android:id="@+id/Module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_toolbar"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="Module"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#ff9bd540" />
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Module"
+            android:layout_marginTop="34dp"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp">
+            <TextView
+                android:text="Time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+            <TextView
+                android:text="Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+            <TextView
+                android:text="Admin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <ListView
+            android:layout_below="@id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lstAttendees"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
